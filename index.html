@@ -16,7 +16,7 @@
             height: 100vh;
         }
         .container {
-            background-color: #fff;
+            background-color: rgb(107, 43, 43);
             padding: 20px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -41,7 +41,7 @@
         input[type="submit"] {
             width: 100%;
             padding: 10px;
-            background-color: #28a745;
+            background-color: #133c1c;
             color: #fff;
             border: none;
             border-radius: 4px;
@@ -61,7 +61,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>¡Bienvenido!</h1>
+        <h1>¡Bienvenidos!</h1>
         <p>Por favor, deja un mensaje de saludo:</p>
         <form id="saludoForm">
             <label for="nombre">Nombre:</label>
@@ -79,8 +79,8 @@
         document.getElementById('saludoForm').addEventListener('submit', function(event) {
             event.preventDefault(); // Evita que el formulario se envíe
 
-            var nombre = document.getElementById('nombre').value;
-            var mensaje = document.getElementById('mensaje').value;
+            var nombre = document.getElementById('Cual es tu nombre?').value;
+            var mensaje = document.getElementById('Escribe un mensaje').value;
             var mensajePantalla = document.getElementById('mensajePantalla');
 
             if (nombre.trim() !== "" && mensaje.trim() !== "") {
