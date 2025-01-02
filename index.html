@@ -61,7 +61,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>¡Bienvenido!</h1>
+        <h1>¡Bienvenidos!</h1>
         <p>Por favor, deja un mensaje de saludo:</p>
         <form id="saludoForm">
             <label for="nombre">Nombre:</label>
@@ -79,8 +79,8 @@
         document.getElementById('saludoForm').addEventListener('submit', function(event) {
             event.preventDefault(); // Evita que el formulario se envíe
 
-            var nombre = document.getElementById('nombre').value;
-            var mensaje = document.getElementById('mensaje').value;
+            var nombre = document.getElementById('Cual es tu nombre?').value;
+            var mensaje = document.getElementById('Escribe un mensaje').value;
             var mensajePantalla = document.getElementById('mensajePantalla');
 
             if (nombre.trim() !== "" && mensaje.trim() !== "") {
